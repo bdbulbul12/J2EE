@@ -28,6 +28,8 @@
         <input type="button" value="ok"/>
         <%}%>
         
+        <p><a href="usebean.jsp">Use bean Sample </a> </p>
+        
         
         
         
