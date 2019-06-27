@@ -4,6 +4,8 @@
     Author     : bulbul
 --%>
 
+
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -12,26 +14,34 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <!-- Expression -->
-        <%=(2+2)%>
-        <p> Current Time is : <%=new java.util.Date()%></p>
-        
-        <!-- Declaration -->
-        <%! int a = 5;%>
-        <h1>The value of a is:  <%= a%></h1>
-        
-        <!-- Script lets Logical ----part here---  -->
-        <% if(a>5) { %>
-        <input type="text" value="Hello" placeholder="Hello"/>
-        <% } else {%>
-        <input type="button" value="ok"/>
-        <%}%>
-        
-        <p><a href="usebean.jsp">Use bean Sample </a> </p>
-        
-        
-        
-        
+        <form  name="form1" action="login.jsp" method="post">
+            
+            <table border="1" width="25%"  cellpadding="8" align="center" style="margin-top:100px;">
+                <thead>
+                    <tr>
+                        <th colspan="2">Login Here</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>User Name</td>
+                        <td><input type="text"  name="uname" value=""</td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" name="password" value=""</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><input type="submit" name="submit" value="Submit"</td>
+                        <td><input type="reset" name="reset" value="Reset"</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align:center">Do not Register<a href="reg.jsp"> Click here</td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
     </body>
 </html>
